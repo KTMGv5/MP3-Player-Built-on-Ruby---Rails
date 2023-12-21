@@ -1,0 +1,18 @@
+<!-- app/views/home/index.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+  <h1>Welcome to our Music App!</h1>
+  <p>Explore and enjoy your favorite tunes.</p>
+  <%= link_to 'Explore Music', music_path, class: 'btn' %>
+</div>
+
+</body>
+</html>

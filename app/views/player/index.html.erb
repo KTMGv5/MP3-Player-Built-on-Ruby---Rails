@@ -1,0 +1,36 @@
+<!-- app/views/player/index.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MP3 Player</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav>
+  <%= link_to 'Home', root_path %>
+</nav>
+
+<div class="container">
+  <h1>MP3 Player</h1>
+
+  <div id="player-container">
+    <ul id="playlist">
+      <% @mp3_files.each do |file| %>
+        <li><%= file %></li>
+      <% end %>
+    </ul>
+
+    <div id="time-display"></div>
+    
+    <!-- Add Play/Pause buttons -->
+    <button id="play-button">Play</button>
+    <button id="pause-button">Pause</button>
+  </div>
+</div>
+
+<script type="module" src="/assets/player.js"></script>
+</body>
+</html>

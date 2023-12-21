@@ -1,0 +1,32 @@
+/* app/assets/stylesheets/application.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+#player-container {
+  margin-top: 20px;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+}
+
+#playlist li {
+  margin: 5px;
+  cursor: pointer;
+}
+
+#time-display {
+  margin-top: 10px;
+}
